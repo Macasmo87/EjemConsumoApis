@@ -1,0 +1,117 @@
+
+p
+{
+    color:blue;
+    font-weight: bold;
+}
+/*
+aqui se le da estilo a la etiqueta h1
+Dar formato por id's = #+identificador
+Dar formato por clases = .+ identificador de clase
+*/
+h1, p, a{
+    color:red;
+    font-family: Cochin, Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 20px;
+}
+
+#xy:hover{
+    color:blueviolet;
+    font-size: 100px;
+}
+
+
+
+.v{
+    color:brown;
+}
+
+p.upb{
+    color:darkgreen;
+}
+
+h1.xxx{
+    color:green;
+}
+
+p[name$="a"]{
+    color:chartreuse
+}
+
+p[name*="aco"]{
+    color:blueviolet
+}
+
+p[name$="c"]{
+    color:cyan
+}
+
+p[name$="d"]{
+    color:indigo
+}
+
+body{
+    background-color: silver;
+    margin: 0;
+    display: flex;
+    min-height: 100px;
+}
+
+.caja{
+    margin: 200px;
+    perspective: 2000px;
+    perspective-origin: 0px -1000px;
+}
+
+.cubo{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: girar 5s infinite linear;
+}
+
+@keyframes girar{
+    from{
+        transform: rotateY(8deg);
+} to{
+    transform: rotateY(360deg);
+}
+}
+
+.cara{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#cara1{
+    background: blue;
+    transform: translateZ(100px);
+}
+
+#cara2{
+    background: red;
+    transform: translateX(100px) rotateY(90deg);
+}
+
+#cara3{
+    background: brown;
+    transform: translateZ(-100px);
+}
+
+#cara4{
+    background: yellow;
+    transform: translateX(-100px) rotateY(90deg);
+}
+
+#cara5{
+    background: violet;
+    transform: translateY(-100px) rotateX(90deg);
+}
+
+#cara6{
+    background: green;
+    transform: translateY(100px) rotateX(90deg);
+}
